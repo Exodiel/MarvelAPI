@@ -12,8 +12,8 @@ const ajax = request => {
 
 const showMarvel = async () => {
     console.log('recuperando la información')
-    const hash = 'ecfe761ffa2c2a579cf78fa3c4931f05'
-    const apiKey = '8e03039d5d38f31f8363edd552ca6ff7'
+    const hash = 'aquí va el hash que tienes que generar con los datos de la api de marvel'
+    const apiKey = 'aquí va el key público que te proporciona la api de marvel'
     const url = `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${apiKey}&hash=${hash}&limit=20&nameStartsWith=iron%20man`
     const request = { method: 'GET', url: url }
     const response = await ajax(request)
